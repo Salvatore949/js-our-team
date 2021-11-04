@@ -35,7 +35,7 @@ var classi = [
 
     {
         "immagine": "img/barbara-ramos-graphic-designer.jpg",
-        "nome personaggio":"Barbara Ramos",
+        "nome_personaggio":"Barbara Ramos",
         "ruolo":"Graphic Designer"
     }
 
@@ -43,7 +43,86 @@ var classi = [
 
 console.log(classi);
 
-for(){
+for(let i = 0; i < classi.length; i++) {
+
+    document.querySelector('.team-container').innerHTML += `<div class="team-card">
+        <div class="card-image">
+            <img
+            src="img/wayne-barnett-founder-ceo.jpg"
+            alt="Wayne Barnett"
+            />
+        </div>
+        <div class="card-text">
+            <h3>${classi[i].ruolo}</h3>
+            <p>Founder & CEO</p>
+        </div>
+    </div>`
+
+    document.querySelector('.team-container').innerHTML += `<div class="team-card">
+    <div class="card-image">
+        <img
+        src="img/wayne-barnett-founder-ceo.jpg"
+        alt="Wayne Barnett"
+        />
+    </div>
+    <div class="card-text">
+        <h3>${classi[i].ruolo}</h3>
+        <p>Founder & CEO</p>
+    </div>
+</div>`
+
+document.querySelector('.team-container').innerHTML += `<div class="team-card">
+<div class="card-image">
+    <img
+    src="img/wayne-barnett-founder-ceo.jpg"
+    alt="Wayne Barnett"
+    />
+</div>
+<div class="card-text">
+    <h3>${classi[i].ruolo}</h3>
+    <p>Founder & CEO</p>
+</div>
+</div>`
+
+document.querySelector('.team-container').innerHTML += `<div class="team-card">
+<div class="card-image">
+    <img
+    src="img/wayne-barnett-founder-ceo.jpg"
+    alt="Wayne Barnett"
+    />
+</div>
+<div class="card-text">
+    <h3>${classi[i].ruolo}</h3>
+    <p>Founder & CEO</p>
+</div>
+</div>`
+
+document.querySelector('.team-container').innerHTML += `<div class="team-card">
+<div class="card-image">
+    <img
+    src="img/wayne-barnett-founder-ceo.jpg"
+    alt="Wayne Barnett"
+    />
+</div>
+<div class="card-text">
+    <h3>${classi[i].ruolo}</h3>
+    <p>Founder & CEO</p>
+</div>
+</div>`
+
+document.querySelector('.team-container').innerHTML += `<div class="team-card">
+<div class="card-image">
+    <img
+    src="img/wayne-barnett-founder-ceo.jpg"
+    alt="Wayne Barnett"
+    />
+</div>
+<div class="card-text">
+    <h3>${classi[i].ruolo}</h3>
+    <p>Founder & CEO</p>
+</div>
+</div>`
+
 
 }
 
