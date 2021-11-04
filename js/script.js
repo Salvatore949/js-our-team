@@ -1,5 +1,5 @@
 // Creo un array di oggetti
-// creo un append per stampare in pagina 
+// creo ciclo for per scorrere dentro l'array 
 
 var classi = [
 
@@ -43,5 +43,7 @@ var classi = [
 
 console.log(classi);
 
+for(){
 
+}
 
