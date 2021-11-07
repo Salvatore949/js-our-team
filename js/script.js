@@ -5,31 +5,31 @@ var classi = [
 
     {   
         "immagine": "img/wayne-barnett-founder-ceo.jpg",
-        "nome personaggio":"Wayne Bernett",
+        "nome_personaggio":"Wayne Bernett",
         "ruolo":"Founder e CEO"
     },
 
     {
         "immagine": "img/angela-caroll-chief-editor.jpg",
-        "nome personaggio":"Angela Carol",
+        "nome_personaggio":"Angela Carol",
         "ruolo":"Chief Editor"
     },
 
     {
         "immagine": "img/walter-gordon-office-manager.jpg",
-        "nome personaggio":"Walter Gordon",
+        "nome_personaggio":"Walter Gordon",
         "ruolo":"Officer Manager"
     },
 
     {
         "immagine": "img/angela-lopez-social-media-manager.jpg",
-        "nome personaggio":"Angela Lopez",
+        "nome_personaggio":"Angela Lopez",
         "ruolo":"Social Media Manager"
     },
 
     {
         "immagine": "img/scott-estrada-developer.jpg",
-        "nome personaggio":"Scott Estrada",
+        "nome_personaggio":"Scott Estrada",
         "ruolo":"Developer"
     },
 
@@ -45,84 +45,21 @@ console.log(classi);
 
 for(let i = 0; i < classi.length; i++) {
 
+    const oggetto = classi[i];
+    const nome = classi[i].immagine;
+
+    const peso = classi[i].nome_personaggio;
+    const brand = classi[i].ruolo;
+
     document.querySelector('.team-container').innerHTML += `<div class="team-card">
         <div class="card-image">
-            <img
-            src="img/wayne-barnett-founder-ceo.jpg"
-            alt="Wayne Barnett"
-            />
+            <img src=${nome}/>
         </div>
         <div class="card-text">
-            <h3>${classi[i].ruolo}</h3>
-            <p>Founder & CEO</p>
+            <h3>${peso}</h3>
+            <p>${brand}</p>
         </div>
     </div>`
-
-    document.querySelector('.team-container').innerHTML += `<div class="team-card">
-    <div class="card-image">
-        <img
-        src="img/wayne-barnett-founder-ceo.jpg"
-        alt="Wayne Barnett"
-        />
-    </div>
-    <div class="card-text">
-        <h3>${classi[i].ruolo}</h3>
-        <p>Founder & CEO</p>
-    </div>
-</div>`
-
-document.querySelector('.team-container').innerHTML += `<div class="team-card">
-<div class="card-image">
-    <img
-    src="img/wayne-barnett-founder-ceo.jpg"
-    alt="Wayne Barnett"
-    />
-</div>
-<div class="card-text">
-    <h3>${classi[i].ruolo}</h3>
-    <p>Founder & CEO</p>
-</div>
-</div>`
-
-document.querySelector('.team-container').innerHTML += `<div class="team-card">
-<div class="card-image">
-    <img
-    src="img/wayne-barnett-founder-ceo.jpg"
-    alt="Wayne Barnett"
-    />
-</div>
-<div class="card-text">
-    <h3>${classi[i].ruolo}</h3>
-    <p>Founder & CEO</p>
-</div>
-</div>`
-
-document.querySelector('.team-container').innerHTML += `<div class="team-card">
-<div class="card-image">
-    <img
-    src="img/wayne-barnett-founder-ceo.jpg"
-    alt="Wayne Barnett"
-    />
-</div>
-<div class="card-text">
-    <h3>${classi[i].ruolo}</h3>
-    <p>Founder & CEO</p>
-</div>
-</div>`
-
-document.querySelector('.team-container').innerHTML += `<div class="team-card">
-<div class="card-image">
-    <img
-    src="img/wayne-barnett-founder-ceo.jpg"
-    alt="Wayne Barnett"
-    />
-</div>
-<div class="card-text">
-    <h3>${classi[i].ruolo}</h3>
-    <p>Founder & CEO</p>
-</div>
-</div>`
-
 
 }
 
